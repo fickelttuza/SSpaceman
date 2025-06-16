@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smok-Spaceman.pl – Najlepsze Jednorazowe Vapy w Polsce | Elektroniczne Papierosy i Akcesoria </title>
+  <meta name="description" content="Spaceman SP40000 - nowa era vaping w Polsce. 40000 zaciągnięć, bez ładowania, bez stresu. Zamów teraz z darmową dostawą!" />
+  <meta name="keywords" content="spaceman sp40000, jednorazowy vape, e-papieros jednorazowy, 40000 puffów, vape bez ładowania, najlepszy vape, sklep vape polska, e-papieros bez nikotyny" />
+  <meta property="og:title" content="Spaceman SP40000 - Nowa Era Vaping w Polsce" />
+  <meta property="og:description" content="Odkryj Spaceman SP40000 - 40000 zaciągnięć, bez ładowania, bez stresu. Idealny wybór dla nowoczesnych vaperów." />
+  <meta property="og:image" content="https://example.com/spaceman-og-image.jpg" />
+  <meta property="og:url" content="https://www.dbucha.com/spaceman-sp40000" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Spaceman SP40000 Disposable Vape",
+      "image": "https://example.com/spaceman-product.jpg",
+      "description": "Spaceman SP40000 - jednorazowy e-papieros z 40000 zaciągnięciami, bez potrzeby ładowania.",
+      "brand": { "@type": "Brand", "name": "Spaceman" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "PLN",
+        "price": "129.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.dbucha.com/"
+      }
+    }
+  </script>
+  <link rel="icon" href="https://res.spacemans.com/www/files/v1/web_icon/jpt2wrr4_favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Mobile Menu Stars */
+    .star-menu-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .star-menu-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, rgba(56, 182, 255, 0.1) 0%, transparent 70%);
+    }
+    .star-menu-bg .star {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      animation: twinkle var(--duration, 3s) infinite ease-in-out;
+    }
+    
+    /* Star background for entire site */
+    .star-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      animation: twinkle var(--duration, 3s) infinite ease-in-out;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.1; }
+      50% { opacity: 0.8; }
+    }
+    
+    /* Animations */
+    .animate-float { animation: float 4s ease-in-out infinite; }
+    .animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+    .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+    .animate-bounce-slow { animation: bounce 2s infinite; }
+    .animate-pulse-slow { animation: pulse 6s infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .scrolling-text {
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+    .scrolling-text div {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Sticky menu background */
+    header {
+      background: rgba(15, 23, 42, 0.9); /* Tailwind slate-900 90% opacity */
+      backdrop-filter: saturate(180%) blur(20px);
+      z-index: 50;
+    }
+    
+    /* New Animations */
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .animate-fade-in-left { animation: fadeInLeft 0.8s ease-out forwards; }
+    .animate-fade-in-right { animation: fadeInRight 0.8s ease-out forwards; }
+    
+    details > div { 
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    details[open] > div { max-height: 500px; }
+    details[open] > summary > span { transform: rotate(45deg); }
+    details > summary > span { transition: transform 0.3s ease; }
+    
+    /* Smoke animation */
+    @keyframes smokeRise {
+      0% {
+        opacity: 0.8;
+        transform: translateY(0) translateX(-50%) scale(0.2);
+        filter: blur(1px);
+      }
+      30% {
+        opacity: 0.6;
+        transform: translateY(-30px) translateX(calc(-50% + 10px)) scale(0.5);
+        filter: blur(2px);
+      }
+      60% {
+        opacity: 0.4;
+        transform: translateY(-70px) translateX(calc(-50% - 10px)) scale(0.8);
+        filter: blur(2.5px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-140px) translateX(-50%) scale(1.2);
+        filter: blur(4px);
+      }
+    }
+    .smoke-particle { margin-bottom: 220px; pointer-events: none; }
+    
+    /* Product card styling */
+    .product-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(96, 165, 250, 0.2);
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 25px -5px rgba(76, 29, 149, 0.3);
+    }
+    
+    /* Icon harmonization */
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      font-size: 28px;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-900 text-white">
+
+  <!-- Star background for entire site -->
+  <div class="star-bg" id="starBackground"></div>
+  
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 w-full shadow-md">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#hero" class="text-2xl font-bold text-blue-400 hover:text-blue-600 transition"><img src="https://cdn.shopify.com/s/files/1/0903/6300/3261/files/Logo_Spaceman.png?v=1749672844" alt="Spaceman Logo" class="h-10"></a>
+      <div class="hidden md:block">
+      <ul class="flex space-x-8 text-blue-300 font-semibold">
+        <li><a href="#hero" class="hover:text-blue-500 transition">Strona Główna</a></li>
+        <li><a href="#spaceman-smoke" class="hover:text-blue-500 transition"> Produkty</a></li>
+        <li><a href="#faq" class="hover:text-blue-500 transition">FAQ</a></li>
+        <li><a href="#footer" class="hover:text-blue-500 transition">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="md:hidden relative">
+      <button id="mobile-menu-button" class="text-blue-300 hover:text-blue-500 transition">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+      <div id="mobile-menu" class="fixed top-0 left-0 w-screen h-screen bg-gray-900 overflow-y-auto hidden z-50 flex flex-col">
+        <div class="absolute inset-0 overflow-hidden z-0">
+          <div class="star-menu-bg"></div>
+        </div>
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-3xl text-blue-300 hover:text-blue-500 transition z-50">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="relative z-10 py-20 px-6 space-y-8 text-center flex-grow">
+          <li><a href="#hero" class="block py-2 px-4 hover:bg-blue-900/30 rounded-lg transition">Strona Główna</a></li>
+          <li><a href="#spaceman-smoke" class="block py-2 px-4 hover:bg-blue-900/30 rounded-lg transition">Produkty</a></li>
+          <li><a href="#faq" class="block py-2 px-4 hover:bg-blue-900/30 rounded-lg transition">FAQ</a></li>
+          <li><a href="#footer" class="block py-2 px-4 hover:bg-blue-900/30 rounded-lg transition">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-gray-900 to-indigo-950 pt-20">
+    <div class="absolute inset-0 z-0">
+      <!-- Stars will be generated by JS -->
+    </div>
+
+    <!-- Background Circle -->
+    <div class="absolute top-[30%] left-1/2 transform -translate-x-1/2 w-72 h-72 rounded-full bg-gradient-to-br from-blue-500 to-purple-700 opacity-20 blur-3xl animate-pulse-slow z-10"></div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 text-center z-30">
+      <div class="max-w-2xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-down">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Spaceman SP40000</span> - Nowa Era Vaping w Polsce
+        </h1>
+        <p class="text-xl text-blue-200 mb-10 animate-fade-in-up">
+          40000 zaciągnięć, bez ładowania, bez stresu. Idealny wybór dla nowoczesnych vaperów.
+        </p>
+        <div class="text-blue-300 text-lg mb-10">
+          <div class="scrolling-text">
+            <div>✅ 40000 zaciągnięć • 🔋 Bez ładowania • 🚀 Smak premium • 🛡️ Ultra trwała konstrukcja • </div>
+          </div>
+        </div>
+        <a href="https://www.dbucha.com/collections/spaceman" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white py-4 px-8 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-bounce-slow">Kup Teraz</a>
+      </div>
+    </div>
+
+    <!-- Vape + Smoke Wrapper -->
+    <div class="absolute top-[25%] left-1/2 transform -translate-x-1/2 w-64 h-[400px] flex justify-center items-end z-20">
+      <!-- Smoke Behind -->
+      <div class="smoke-container absolute bottom-[180px] w-64 h-[300px] pointer-events-none z-10"></div>
+
+      <!-- Vape Image -->
+      <img src="https://cdn.shopify.com/s/files/1/0903/6300/3261/files/spaceman-sp40000_wegwerp-vape-puff-jetable_2.png?v=1749671591" alt="Spaceman SP40000" class="w-48 h-80 object-contain relative z-20 animate-float" />
+    </div>
+  </section>
+
+  <!-- NEW SECTION: Spaceman Smoke -->
+  <section id="spaceman-smoke" class="py-16 bg-gradient-to-b from-gray-900 to-indigo-950">
+    <div class="container mx-auto px-4">
+      <!-- Animated Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 animate-pulse">
+          Spaceman Smoke – Jednorazowe Vape od SMOK<span class="inline-block animate-bounce">🚀</span>
+        </h2>
+        <p class="text-xl text-blue-200 animate-fade-in-down">
+          Kosmiczne smaki, gwiezdna żywotność baterii i niewiarygodna liczba zaciągnięć – Spaceman Smoke to jednorazowy e-papieros, który wynosi wapowanie na nowy poziom. Doświadcz technologii przyszłości i intensywnego smaku w każdej chmurze!
+        </p>
+      </div>
+
+      
+      <!-- Product Showcase -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Prism 20K -->
+        <div class="product-card bg-gradient-to-br from-blue-900/50 to-purple-900/50 rounded-2xl p-6 text-center">
+          <h3 class="text-2xl font-bold text-blue-300 mb-2">Prism 20K</h3>
+          <img src="https://cdn.shopify.com/s/files/1/0903/6300/3261/files/2716333f-fc6a-4a4e-9c28-144945f6e09d__79908_1.png?v=1749726574" alt="Prism 20K" class="w-32 mx-auto mb-4">
+          <div class="space-y-2 text-blue-200 mb-4">
+            <p><i class="fas fa-smoking mr-2"></i> ~20 000 pufów</p>
+            <p><i class="fas fa-flask mr-2"></i> 18 mL pojemność</p>
+            <p><i class="fas fa-bolt mr-2"></i> 1000 mAh bateria</p>
+            <p class="font-bold"><i class="fas fa-sliders-h mr-2"></i> 3 tryby mocy</p>
+          </div>
+          <div class="bg-gray-800/30 rounded-lg p-3 mb-4">
+            <p class="font-semibold">Tryby:</p>
+            <p>Boost (chmury), Normal (balans), Soft (łagodny)</p>
+          </div>
+          <a href="https://www.dbucha.com/collections/spaceman" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg transition duration-300">Kup Teraz</a>
+        </div>
+
+        <!-- Nebula 25K -->
+        <div class="product-card bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-6 text-center">
+          <h3 class="text-2xl font-bold text-purple-300 mb-2">Nebula 25K</h3>
+          <img src="https://cdn.shopify.com/s/files/1/0903/6300/3261/files/smok-spaceman-nebula-25k-5-pack.png?v=1749726964" alt="Nebula 25K" class="w-32 mx-auto mb-4">
+          <div class="space-y-2 text-blue-200 mb-4">
+            <p><i class="fas fa-smoking mr-2"></i> ~25 000 pufów</p>
+            <p><i class="fas fa-flask mr-2"></i> 18 mL pojemność</p>
+            <p><i class="fas fa-layer-group mr-2"></i> Dual-coil technologia</p>
+            <p class="font-bold"><i class="fas fa-sliders-h mr-2"></i> 3 tryby mocy</p>
+          </div>
+          <div class="bg-gray-800/30 rounded-lg p-3 mb-4">
+            <p class="font-semibold">Zaleta:</p>
+            <p>Najlepsza wydajność smakowa</p>
+          </div>
+          <a href="https://www.dbucha.com/collections/spaceman" class="inline-block bg-purple-600 hover:bg-purple-700 text-white py-2 px-6 rounded-lg transition duration-300">Kup Teraz</a>
+        </div>
+
+        <!-- SP40000 -->
+        <div class="product-card bg-gradient-to-br from-pink-900/50 to-red-900/50 rounded-2xl p-6 text-center">
+          <h3 class="text-2xl font-bold text-pink-300 mb-2">SP40000</h3>
+          <img src="https://cdn.shopify.com/s/files/1/0903/6300/3261/files/SMOK_SpaceMan_SP40000_40K_Puff_Disposable_Angle-1__82090.png?v=1749727139" alt="SP40000" class="w-32 mx-auto mb-4">
+          <div class="space-y-2 text-blue-200 mb-4">
+            <p><i class="fas fa-smoking mr-2"></i> ~40 000 pufów</p>
+            <p><i class="fas fa-flask mr-2"></i> 20 mL pojemność</p>
+            <p><i class="fas fa-tachometer-alt mr-2"></i> Regulowana moc 10-26W</p>
+            <p class="font-bold"><i class="fas fa-fan mr-2"></i> Kontrola przepływu & ICE</p>
+          </div>
+          <div class="bg-gray-800/30 rounded-lg p-3 mb-4">
+            <p class="font-semibold">Funkcje premium:</p>
+            <p>Ekran LCD, pełna regulacja</p>
+          </div>
+          <a href="https://www.dbucha.com/collections/spaceman" class="inline-block bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-lg transition duration-300">Kup Teraz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-gradient-to-b from-gray-900 to-indigo-950 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12">Dlaczego SP40000?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <div class="feature-icon bg-blue-900/50 mx-auto">
+            <i class="fas fa-battery-full text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Bez ładowania</h3>
+          <p class="text-blue-200">Korzystaj bez przerw. SP40000 to urządzenie, które działa, kiedy Ty tego potrzebujesz.</p>
+        </div>
+        <div>
+          <div class="feature-icon bg-purple-900/50 mx-auto">
+            <i class="fas fa-rocket text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">40000 Zaciągnięć</h3>
+          <p class="text-blue-200">Zredukowana konieczność wymiany – dłuższe użytkowanie i więcej oszczędności.</p>
+        </div>
+        <div>
+          <div class="feature-icon bg-pink-900/50 mx-auto">
+            <i class="fas fa-star text-pink-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Intensywny smak</h3>
+          <p class="text-blue-200">Każde zaciągnięcie to eksplozja smaku. Idealne dla koneserów aromatu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Image Banner Section -->
+  <section id="banner" class="relative bg-gradient-to-b from-indigo-950 to-gray-900 py-20 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Vape Prism 20K – Najlepszy Jednorazowy E-Papieros z 20 000 Zaciągnięć</h2>
+      <p class="text-blue-200 text-lg mb-8">Poznaj Prism 20K, jednego z najmocniejszych jednorazowych e-papierosów dostępnych na rynku. Oferuje aż 20 000 zaciągnięć, intensywny smak i wyjątkową wydajność. Idealny dla osób szukających długotrwałej przyjemności z wapowania bez konieczności ładowania czy uzupełniania płynu. Wybierz Prism 20K – połączenie stylu, mocy i wygody. Sprawdź dostępne smaki i przekonaj się sam, dlaczego to najnowszy hit wśród vape'ów!</p>
+      <div class="aspect-w-16 aspect-h-9 rounded-xl shadow-2xl overflow-hidden">
+        <img src="https://res.smoktech.com/www/files/v2/product/plroNJGle0UzBGzvoxJOu6xzNKq.jpeg" alt="Spaceman SP40000" class="w-full h-auto object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-gray-800 text-center">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-blue-400">Co mówią nasi klienci</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+          <div class="flex justify-center text-yellow-400 mb-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-blue-200 italic mb-4">„Najlepszy jednorazowy vape, jaki kiedykolwiek miałem. Smak i trwałość na najwyższym poziomie!”</p>
+          <div class="text-blue-400 font-semibold">– Michał K.</div>
+        </div>
+        <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+          <div class="flex justify-center text-yellow-400 mb-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-blue-200 italic mb-4">„SP40000 zmienił moje podejście do vaping. Bez ładowania i dużo puffów to rewelacja.”</p>
+          <div class="text-blue-400 font-semibold">– Agnieszka W.</div>
+        </div>
+        <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+          <div class="flex justify-center text-yellow-400 mb-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text-blue-200 italic mb-4">„Polecam każdemu, kto szuka trwałego i intensywnego smaku bez żadnych komplikacji.”</p>
+          <div class="text-blue-400 font-semibold">– Łukasz P.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-gradient-to-b from-gray-900 to-indigo-950 text-blue-200">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-blue-400 text-center">Najczęściej zadawane pytania</h2>
+      
+      <div class="space-y-4">
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Co to jest Spaceman Smoke?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            Linia jednorazowych e-papierosów premium od SMOK z rekordową liczbą zaciągnięć, zaawansowanymi funkcjami i intensywnymi smakami.
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Jak długo trwa bateria i ile pufów?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Prism 20K: ~20,000 pufów</li>
+              <li>Nebula: ~25,000 pufów</li>
+              <li>SP40000: ~40,000 pufów</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Czy można ładować urządzenie ponownie?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            Tak, wszystkie modele mają port USB-C do ładowania. SP40000 ma największą baterię 650mAh.
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Jakie mamy tryby mocy i jak je przełączać?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            3 tryby: Soft (zielony), Normal (niebieski), Boost (czerwony). Przełącznik potrójnym kliknięciem przycisku.
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Czy można regulować przepływ powietrza?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            Tak, SP40000 ma pokrętło do regulacji. Prism i Nebula mają stały przepływ optymalizujący smak.
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Jak ekran wyświetla poziom baterii i e-liquidu?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            Inteligentny ekran LCD pokazuje:
+            <ul class="list-disc pl-5 mt-2">
+              <li>Poziom baterii (pasek)</li>
+              <li>Ilość liquidu (procentowo)</li>
+              <li>Aktywny tryb mocy</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            Jakie są dostępne smaki?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            3 kategorie:
+            <ul class="list-disc pl-5 mt-2">
+              <li><span class="font-bold">Owoce/Lód:</span> Mango Ice, Blue Razz Ice</li>
+              <li><span class="font-bold">Desery:</span> Vanilla Custard, Caramel Tobacco</li>
+              <li><span class="font-bold">Mięta:</span> Pure Mint, Ice Menthol</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="bg-gray-800/50 rounded-xl overflow-hidden animate-fade-in-up">
+          <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center">
+            W jakim czasie się ładuje przez USB-C?
+            <span class="text-blue-400 text-2xl">+</span>
+          </summary>
+          <div class="p-4 pt-0 text-blue-200">
+            Pełne ładowanie zajmuje:
+            <ul class="list-disc pl-5 mt-2">
+              <li>Prism 20K: ~45 minut</li>
+              <li>Nebula: ~60 minut</li>
+              <li>SP40000: ~75 minut</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer id="footer" class="bg-gray-900 text-blue-300 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Spaceman Vape</h3>
+          <p class="mb-4">Najlepsze jednorazowe e-papierosy w Polsce. Gwarancja jakości i satysfakcji.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.dbucha.com/collections/spaceman" class="text-blue-400 hover:text-blue-600 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.dbucha.com/collections/spaceman" class="text-blue-400 hover:text-blue-600 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.dbucha.com/collections/spaceman" class="text-blue-400 hover:text-blue-600 transition">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Produkty</h3>
+          <ul class="space-y-2">
+            <li><a href="https://www.dbucha.com/collections/spaceman" class="hover:text-blue-500 transition">SP40000</a></li>
+            <li><a href="https://www.dbucha.com/collections/spaceman" class="hover:text-blue-500 transition">Prism 20K</a></li>
+            <li><a href="https://www.dbucha.com/collections/spaceman" class="hover:text-blue-500 transition">Nebula 25K</a></li>
+            <li><a href="https://www.dbucha.com/collections/spaceman" class="hover:text-blue-500 transition">Akcesoria</a></li>
+            <li><a href="https://www.dbucha.com/collections/spaceman" class="hover:text-blue-500 transition">Liquidy</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Informacje</h3>
+          <ul class="space-y-2">
+            <li><a href="#hero" class="hover:text-blue-500 transition">Strona Główna</a></li>
+            <li><a href="#spaceman-smoke" class="hover:text-blue-500 transition">Produkty</a></li>
+            <li><a href="#faq" class="hover:text-blue-500 transition">FAQ</a></li>
+            <li><a href="#footer" class="hover:text-blue-500 transition">Kontakt</a></li>
+ </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Kontakt</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-2 text-blue-400"></i>
+              <span>+48 573 581 194</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-2 text-blue-400"></i>
+              <span>info@dbucha.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-400"></i>
+              <span>Michała Kleofasa Ogińskiego 30 A, Warszawa, Polska</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+        <p>&copy; 2025 smok-spaceman.pl | Wszystkie prawa zastrzeżone</p>
+        <p class="mt-2 text-sm">Strona stworzona z pasją do wysokiej jakości vaping</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- All JavaScript at the bottom -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Star background for entire site
+      const starBg = document.getElementById('starBackground');
+      const starsCount = 200;
+      
+      for (let i = 0; i < starsCount; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        
+        // Random position
+        const x = Math.random() * 100;
+        const y = Math.random() * 100;
+        
+        // Random size (0.5px to 2px)
+        const size = Math.random() * 1.5 + 0.5;
+        
+        // Random animation duration (3s to 10s)
+        const duration = Math.random() * 7 + 3;
+        
+        star.style.left = `${x}%`;
+        star.style.top = `${y}%`;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.setProperty('--duration', `${duration}s`);
+        
+        starBg.appendChild(star);
+      }
+      
+      // Stars for mobile menu background
+      const menuBg = document.querySelector('.star-menu-bg');
+      for (let i = 0; i < 30; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        Object.assign(star.style, {
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          width: `${Math.random() * 3 + 1}px`,
+          height: `${Math.random() * 3 + 1}px`,
+          opacity: Math.random() * 0.8 + 0.2,
+          animationDuration: `${Math.random() * 3 + 1}s`,
+          animationDelay: `${Math.random() * 2}s`
+        });
+        menuBg.appendChild(star);
+      }
+      
+      // Mobile menu functionality
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+      
+      // Toggle menu
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close menu
+      mobileMenuClose.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+      
+      // Close menu when clicking links
+      const menuLinks = document.querySelectorAll('#mobile-menu a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          mobileMenu.classList.add('hidden');
+          
+          const targetId = link.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Smoke effect
+      const container = document.querySelector('.smoke-container');
+      for (let i = 0; i < 12; i++) {
+        const particle = document.createElement('div');
+        const size = 8 + Math.random() * 20;
+        const delay = Math.random() * 5;
+        const blur = 1 + Math.random() * 3;
+        particle.className = 'smoke-particle absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-full bg-white';
+        Object.assign(particle.style, {
+          width: `${size}px`,
+          height: `${size}px`,
+          opacity: (0.2 + Math.random() * 0.3).toFixed(2),
+          animation: `smokeRise ${6 + Math.random() * 4}s ease-in-out infinite`,
+          animationDelay: `${delay}s`,
+          filter: `blur(${blur}px)`,
+        });
+        container.appendChild(particle);
+      }
+    });
+  </script>
+
+</body>
+</html>
